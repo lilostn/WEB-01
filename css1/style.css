@@ -1,0 +1,39 @@
+body {
+    background-color: #b6ff9a;
+    background-image: url("back.jpeg");
+    background-repeat: no-repeat;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+/* É possivel usar varios tipos de modos de cor, como rgb, hsl, hexadecimal
+o site htmlcolorcodes ajuda com isso*/
+
+h1, h2 {
+    color: #c0257a;
+
+}
+p {
+    color: #ff77bb;
+    line-height: 1.5;
+}
+
+#subtitulo {
+    color:rgb(32, 35, 218);
+    font-size: 2.0rem;
+}
+
+.aviso {
+    background: #f75aa8;
+    color: rgb(234, 255, 142);
+    padding: 8px;
+    border: 1px solid #fa9ecc;
+    border-radius: 4px;
+}
+
+.caixa3 {
+    width: 500px;
+    min-height: 300px;
+    max-width: 100%;
+    background: #645522;
+    
+}
