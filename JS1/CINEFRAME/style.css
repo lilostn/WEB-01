@@ -1,0 +1,296 @@
+
+body{
+    /* configurações gerais do body */
+    font-family: Arial, sans-serif;
+    margin: auto;
+    background-color: #4A0D12;
+    color: #FFF3D6;
+    background-image: url("assets/background2.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+        header{
+            /* configurações do header */
+            background-color: rgba(15, 13, 13, 0.85);
+            padding: 20px;
+            background-image: url("assets/backfita.png");
+            background-size: cover;
+            background-position: center;
+            border-bottom: 4px solid #FFD43B;
+    
+        }
+
+        header h1{
+            /* configurações do título do caabeçalho */
+            margin: auto;
+            color: #FFD43B;
+            font-size: 80px;
+            margin-top: 30px;
+            text-shadow: 2px 2px 8px rgba(247, 247, 113, 0.89);
+            
+
+        }
+
+        header h2{
+            /* configurações do subtítulo do cabeçalho */
+           
+            color: #FFF3D6;
+            font-size: 16px;
+            padding: 5px;
+            text-align: left;
+        
+        }
+
+        nav{
+            margin-top: 150px;
+           
+        }
+
+        a{
+            /* configurações da barra de navegação/ menu*/
+            color: #FFF3D6;
+            text-decoration: none;
+            transition: transform 0.2s ease; /*para deixar a animação do transform mais lenta*/
+        }
+        a:hover{
+            /* configurações da barra de navegação/ menu quando o mouse passa por cima */
+            color: #FFD43B;
+            text-shadow: 0 0 3px rgb(248, 248, 247);
+            display: inline-block;
+            transform: scale(1.1); /*para aumentar o tamanho dos links ao passar o mouse, dando mais destaque*/
+            
+        }
+        nav ul{
+            display: flex; /* pra organizar os links em linha */
+            gap: 60px; /* pra dar espaço entre os links */
+            list-style: none; /* pra tirar os marcadores da lista */  
+            padding: 0; /* pra tirar o padding da lista */
+            margin: 0; /* pra tirar a margem da lista */
+            justify-content: center; /* pra centralizar os links */
+            flex-wrap: wrap;
+          
+        }
+
+h2{
+    text-align: center;
+}
+
+#banner{
+    text-align: center;
+    justify-content: center;
+}
+
+#destaque-semana{
+    
+    width: 400px;
+    height: 620px;
+    justify-content: center;
+    text-align: center;
+    border-radius: 15px;
+    background-color: rgba(77, 11, 11, 0.349);
+    margin: auto;
+    box-shadow: 0 6px 20px rgba(248, 245, 31, 0.8);
+    transition: transform 0.3s ease;
+  
+}
+#destaque-semana:hover{
+    transform: scale(1.05);
+
+}
+#destaque-semana h2{
+    color: #FFD43B;
+    margin-bottom: 20px;
+    margin-top: 80px;
+    
+}
+
+#destaque-semana h3{
+    color: #FFD43B;
+    margin-bottom: 20px;
+}
+#destaque-semana a{
+    color: #FFD43B;
+}
+#destaque-semana a:hover{
+    color: #FFF3D6;
+    text-shadow: 0 0 4px rgb(248, 244, 31);
+}
+
+#catalogo h2{
+    display: flex;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 30px;
+    background-color: rgba(24, 6, 6, 0.671);
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.filmes {
+    /* organização geral do catálogo */
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+
+.filme {
+    /* aparência de cada card */
+    margin:0;
+    background-color: rgba(77, 11, 11, 0.349);
+    padding: 5px;
+    width: 235px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.4s ease;
+    
+}
+
+.filme h3{
+    color: #FFD43B;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(247, 247, 113, 0.719);
+}
+
+.filme p{
+    color: #FFF3D6;
+    margin-top: 0;   
+}
+
+.filme:hover{
+    transform: scale(1.05);
+}
+.filme a{
+    margin-top: auto; /*para deixar os "saiba mais" dos cards organizados, isso junto com o display: flex no .filme e flex-direction: column*/
+    color: #FFD43B; 
+}
+.filme a:hover{
+    color: #FFF3D6 ;
+    text-shadow: 0 0.5px 4px rgb(248, 244, 31);
+}
+
+
+.poster{    
+    /* configurações das imagens */
+
+    width: 200px;
+    height: 300px;
+    object-fit: contain;
+    border-radius: 15px;
+    margin:0 auto;
+    margin-top: 15px;
+}
+.poster2{    
+    /* configurações das imagens
+    so que pra as 2 imagens que não couberam no contain, ai terei q colocar em cover mesmo, mas não vou deixar todas pq ao q parece ela perde qualidade de imagem */
+
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+table{
+    width: 90%; /*pra ocupar quase todo o espaço horizontal disponivel*/
+    margin: 40px auto;
+    border-radius: 14px;
+    border-spacing: 0;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);  
+  
+}
+
+
+th{
+    background-color: black;
+    color: #FFD43B;
+    padding: 16px; 
+    text-align: center;
+}
+td{
+    padding: 12px 14px;
+    text-align: center;
+    
+}
+tr:nth-child(even){
+    background-color: black;
+}
+tr:hover{
+    background-color: #802323;
+    transition: background-color 0.3s ease;
+}
+tr:last-child{
+    border-bottom: none;
+
+}
+
+#generos ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+#generos li{
+    background-color: rgba(0, 0, 0, 0.466);
+    color: #FFD43B;
+    padding: 10px 18px;
+    border-radius: 16px;
+    transition: 0.3s;
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.6) ;
+}
+
+#generos li:hover{
+    background-color: #FFD43B;
+    color: black;
+    transform:translateY(-3px)
+}
+
+#sobre{
+    background-color: rgba(0, 0, 0, 0.466);
+    padding: 30px;
+    margin: 30px 40px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.8);
+}
+#contato{
+    width: 500px ;
+    background-color: rgba(0, 0, 0, 0.466);
+    padding: 30px 40px;
+    margin: 30px;
+    text-align: left;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.466)
+}
+#contato h3{
+    color: #FFD43B;
+}
+#contato:hover{
+    transform: scale(1.05);
+}
+
+#contato h4{
+    color: #FFD43B;
+}
+
+#devolta{
+      text-align: center;
+     margin-bottom: 20px; 
+}
