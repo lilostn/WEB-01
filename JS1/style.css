@@ -289,6 +289,9 @@ tr:last-child{
 #contato h4{
     color: #FFD43B;
 }
+#contato a:hover{
+    transform: scale(1.01);
+}
 
 #devolta{
       text-align: center;
