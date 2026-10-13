@@ -1,3 +1,7 @@
+let buscaAtual="";
+let generoAtual ="";
+
+
 let filmes = [
 { titulo: "Top Gun: Maverick", ano: 2022, genero: ["Ação", "Drama"], nota: 8.2, poster: "assets/topgun.jpg " },
 { titulo: "Homem Aranha: Um Novo Dia", ano: 2026, genero: ["Ação "," Aventura"], nota: 8.0, poster: "assets/spider.jpg" },
