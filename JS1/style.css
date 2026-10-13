@@ -185,6 +185,17 @@ h2{
     flex-wrap: wrap;
     gap: 20px   ;
 }
+
+#catalogo img{
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-top: 10px;
+    display: block;
+    margin:15px auto;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.938);
+}
 .filme {
     /* aparência de cada card */
     margin:0;
