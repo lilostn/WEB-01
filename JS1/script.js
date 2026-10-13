@@ -10,3 +10,11 @@ let filmes = [
 
 ]
 
+
+function mostrarFilmes(lista){
+    const catalogo=
+        document.getElementById("catalogo");
+        catalogo.innerHTML = "";
+}
+
+
