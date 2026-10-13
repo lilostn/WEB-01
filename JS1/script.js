@@ -6,7 +6,7 @@ let filmes = [
 { titulo: "Pecadores", ano: 2025, genero:[ "Terror","Suspense"], nota: 7.5, poster: "assets/sinners.jpg " },
 { titulo: "Deadpool & Wolverine", ano: 2024, genero: ["Ação","Aventura","Comédia"], nota: 7.5, poster: "assets/Deadpool.jpg " },
 { titulo: "Superman", ano: 2025, genero: ["Ação","Aventura","Ficção Científica"], nota: 7.0, poster: "assets/superman.jpg " },
-{ titulo: "Top Gun: Maverick", ano: 2022, genero: ["Ação","Drama"], nota: 8.2, poster: "assets/dragao.jpg" }
+{ titulo: "Como Treinar Seu Dragão", ano: 2022, genero: ["Ação","Drama"], nota: 8.2, poster: "assets/dragao.jpg" }
 
 ]
 
@@ -17,6 +17,10 @@ function mostrarFilmes(lista){
         catalogo.innerHTML = "";
     for (let filme of lista){
         let selo = filme.nota >= 8 ? "⭐ Recomendado":"";
+        const catalogo=
+        document.getElementById("catalogo");
+
+        document.getElementById("contador").textContent=`Total de Filmes: ${lista.lenght}`;
         catalogo.innerHTML+=`
                 <article class="filme">
                     <img src="${filme.poster}" alt="${filme.titulo}"<h3>
@@ -29,5 +33,13 @@ function mostrarFilmes(lista){
     }
 }
 mostrarFilmes(filmes);
+
+document.getElementById("busca").addEventListener("input", function(){
+    const pesquisa = this.value.toLowerCase();
+    const resultado = filmes.filter(filme => filme.titulo.toLowerCase().includes(pesquisa));
+    mostrarFilmes(resultado);
+}
+
+);
 
 

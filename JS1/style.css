@@ -47,18 +47,22 @@ body{
             margin-top: 150px;
            
         }
-        nav input{
+        #busca{
             color:#4A0D12;
             font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #FFD43B;
             border: none;
             border-radius: 10px;
-            padding: 2px;
-            width: 140px;
+            padding: 6px;
+            width: 200px;
             text-align: center;
             transition: box-shadow, transform, border-radius 0.5s;
+            margin: auto;
+            margin-top: 80px;
+            display: block;
+            box-shadow:0 2px 4px #4A0D12;
         }
-        nav input:hover{
+        #busca:hover{
             transform: scale(1.04);
             border-radius: 6px;
             box-shadow: 0 0 4px rgba(250, 245, 245, 0.829);

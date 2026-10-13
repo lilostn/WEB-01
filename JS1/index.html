@@ -20,7 +20,6 @@
                 <li><a href="#generos">Gêneros</a></li>
                 <li><a href="#contato">Contato</a></li>
                 <li><a href="#sobre">Sobre</a></li>
-                <input type="text" id="busca" placeholder="Buscar">
             </ul>
         </nav>
     </header>
@@ -47,7 +46,11 @@
             </div>
         </div>
     </section>
-  <!--catálogo de filmes-->
+  
+    <input type="text" id="busca" placeholder="Buscar Filmes">
+
+    <p id="contador"></p>    
+    <!--catálogo de filmes-->
     <section id="catalogo">
             <h2>Catálogo de Filmes</h2>
            
@@ -117,16 +120,19 @@
     <section id="generos">
         <h2>Gêneros de Filmes</h2>
         <ul>
-            <li>Ação</li>
-            <li>Aventura</li>
-            <li>Drama</li>
-            <li>Ficção Científica</li>
-            <li>Terror</li>
-            <li>Suspense</li>
-            <li>Comédia</li>
+            <li class="genero">Ação</li>
+            <li class="genero">Aventura</li>
+            <li class="genero">Drama</li>
+            <li class="genero">Ficção Científica</li>
+            <li class="genero">Terror</li>
+            <li class="genero">Suspense</li>
+            <li class="genero">Comédia</li>
         </ul>
 
     </section>
+    <select id="filtro-genero">
+        <option value="">Todos os Gêneros</option>
+    </select>
    
    
     <br>
