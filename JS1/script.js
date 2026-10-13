@@ -15,6 +15,9 @@ function mostrarFilmes(lista){
     const catalogo=
         document.getElementById("catalogo");
         catalogo.innerHTML = "";
+    for (let filme of lista){
+        
+    }
 }
 
 
