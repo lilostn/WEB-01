@@ -16,8 +16,18 @@ function mostrarFilmes(lista){
         document.getElementById("catalogo");
         catalogo.innerHTML = "";
     for (let filme of lista){
-        
+        let selo = filme.nota >= 8 ? "⭐ Recomendado":"";
+        catalogo.innerHTML+=`
+                <article class="filme">
+                    <img src="${filme.poster}" alt="${filme.titulo}"<h3>
+                    <h3>${filme.titulo}</h3>    
+
+                </article>
+             
+            `;
+             
     }
 }
+mostrarFilmes(filmes);
 
 
