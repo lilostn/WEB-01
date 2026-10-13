@@ -63,3 +63,7 @@ document.getElementById("filtro-genero").addEventListener("change", function(){
     mostrarFilmes(resultado);
 
 });
+ document.getElementById("inversor").addEventListener("click", function(){
+    filmes.reverse();
+    mostrarFilmes(filmes);
+ });
