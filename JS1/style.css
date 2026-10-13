@@ -256,6 +256,13 @@ tr:last-child{
 
 }
 
+
+#filtro-genero{
+    
+}
+
+
+
 #generos ul{
     list-style: none;
     display: flex;

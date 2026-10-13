@@ -42,4 +42,20 @@ document.getElementById("busca").addEventListener("input", function(){
 
 );
 
+document.querySelectorAll(".genero").forEach(item=> {
+        item.addEventListener("click", function(){
+            const genero = this.textContent.trim();
 
+            const resultado = filmes.filter(filme => filme.genero.includes(genero));
+         
+        mostrarFilmes(resultado);
+            });
+     });
+
+document.getElementById("filtro-genero").addEventListener("change", function(){
+    const genero = this.value;
+
+    const resultado = genero === "" ? filmes : filmes.filter(filme =>filme.genero.includes(genero));
+    mostrarFilmes(resultado);
+
+});
