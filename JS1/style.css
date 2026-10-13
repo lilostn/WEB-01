@@ -60,13 +60,34 @@ body{
             margin: auto;
             margin-top: 80px;
             display: block;
-            box-shadow:0 2px 4px #4A0D12;
+            box-shadow:0 2px 4px #000000;
         }
         #busca:hover{
             transform: scale(1.04);
             border-radius: 6px;
             box-shadow: 0 0 4px rgba(250, 245, 245, 0.829);
         }
+
+
+        #filtro-genero{
+            background-color: #851a23;
+            border: none;
+            border-radius: 8px;
+            padding: 6px;
+            display: block;
+            text-align: center;
+            margin: auto;
+            margin-top: 10px;
+            box-shadow:2px 2px 8px rgb(0, 0, 0);
+            transition: transform 0.2s;
+        }
+
+        #filtro-genero:hover{
+            transform: scale(1.02);
+        }
+
+
+
 
         a{
             /* configurações da barra de navegação/ menu*/
@@ -254,11 +275,6 @@ tr:hover{
 tr:last-child{
     border-bottom: none;
 
-}
-
-
-#filtro-genero{
-    
 }
 
 
